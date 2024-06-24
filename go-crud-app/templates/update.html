@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Book</title>
+</head>
+<body>
+    <h1>Update Book</h1>
+    <form action="/update/{{ .book.ID }}" method="post">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ .book.Title }}">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" value="{{ .book.Author }}">
+        <button type="submit">Update</button>
+    </form>
+    <a href="/">Back to List</a>
+</body>
+</html>

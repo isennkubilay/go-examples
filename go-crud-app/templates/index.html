@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+    <h1>Books</h1>
+    <a href="/create">Add New Book</a>
+    <ul>
+        {{ range .books }}
+        <li>
+            <strong>{{ .Title }}</strong> by {{ .Author }}
+            <a href="/update/{{ .ID }}">Edit</a>
+            <a href="/delete/{{ .ID }}">Delete</a>
+        </li>
+        {{ end }}
+    </ul>
+</body>
+</html>
