@@ -31,7 +31,7 @@ DevOps Daily CLI is a command-line interface tool designed to simplify common Do
 
 3. Navigate to the project directory:
    ```
-   cd devops-cli
+   cd cli-project
    ```
 
 4. Build the project:
